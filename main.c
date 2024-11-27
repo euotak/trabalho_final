@@ -109,7 +109,7 @@ int main() {
             tempo_execucao = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
 
             printf("Tempo de execução do Quick Sort: %f segundos\n", tempo_execucao);
-            printf("Trocas realizadas: %lld\n", contador_movimentacoes);
+            printf("Movimentos realizadas: %lld\n", contador_movimentacoes);
             break;
         }
 
