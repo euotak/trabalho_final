@@ -31,7 +31,11 @@ incremento o indece "i++" e faço a troca
 
   */
 
+<<<<<<< HEAD
 int dividir(int* vetor, int inicio, int fim, unsigned long long* contador_movimentacoes){
+=======
+int dividir(int* vetor, int inicio, int fim, int* contador_movimentacoes) {
+>>>>>>> 633e511b57c1eb4c1cef77a53141a352c69fc1ef
     int pivô = vetor[fim];
     int i = inicio - 1;
 
@@ -55,7 +59,11 @@ int dividir(int* vetor, int inicio, int fim, unsigned long long* contador_movime
 
 
 
+<<<<<<< HEAD
 void quick_sort(int* vetor, int inicio, int fim, unsigned long long* contador_movimentacoes) {
+=======
+void quick_sort(int* vetor, int inicio, int fim, int* contador_movimentacoes) {
+>>>>>>> 633e511b57c1eb4c1cef77a53141a352c69fc1ef
     if (inicio < fim) {
         int indice_pivot = dividir(vetor, inicio, fim, contador_movimentacoes);
         quick_sort(vetor, inicio, indice_pivot - 1, contador_movimentacoes);
