@@ -6,27 +6,6 @@
 #include "gerador_vetores/vetores.h"
 
 
-/*utilizar "selection_sort/selection_sort.h"
-para facilitar a clareza */
-
-
-
-
-
-/* 
-{CORRIGIR ERRO NA LINKAGEM}
-{CORRIGIR ERRO NA LINKAGEM}
-{CORRIGIR ERRO NA LINKAGEM}
-{CORRIGIR ERRO NA LINKAGEM}
-{CORRIGIR ERRO NA LINKAGEM}
-{CORRIGIR ERRO NA LINKAGEM}
-{CORRIGIR ERRO NA LINKAGEM}
-{CORRIGIR ERRO NA LINKAGEM}
-{CORRIGIR ERRO NA LINKAGEM}
-
-*/
-
-
 int main() {
     int tamanho = 100000;
     int* vetor = (int*)malloc(tamanho * sizeof(int));
@@ -39,23 +18,11 @@ int main() {
     int escolha_entrada, escolha_algoritmo;
 
 
-
     printf("Escolha o tipo de entrada:\n");
     printf("1: Ordem crescente\n");
     printf("2: Ordem decrescente\n");
     printf("3: Ordem aleatória\n");
     scanf("%d", &escolha_entrada);
-
-
-    /*será que é uma boa ordem? mudar a ordem depois
-    e ver qual fica mais bonito*/
-
-    /*
-    
-    ^
-    | não mudar, funciona melhor dessa forma
-    
-    */
 
     switch (escolha_entrada) {
         case 1:
@@ -73,19 +40,11 @@ int main() {
             return -1;
     }
 
-
-
-
-
     printf("Escolha o algoritmo de ordenação:\n");
     printf("1: Selection Sort\n");
     printf("2: Quick Sort\n");
     scanf("%d", &escolha_algoritmo);
 
-
-
-
-    /*essa porra serve para medir o tempo e usar a funcao clock()*/
     clock_t inicio, fim;
     double tempo_execucao;
 
