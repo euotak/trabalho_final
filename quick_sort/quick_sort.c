@@ -32,11 +32,11 @@ incremento o indece "i++" e faço a troca
   */
 
 int dividir(int* vetor, int inicio, int fim, unsigned long long* contador_movimentacoes){
-    int pivô = vetor[fim];
+    int pivo = vetor[fim];
     int i = inicio - 1;
 
     for (int j = inicio; j < fim; j++) {
-        if (vetor[j] <= pivô) {
+        if (vetor[j] <= pivo) {
             i++;
             trocar(&vetor[i], &vetor[j]);
             (*contador_movimentacoes)++;
